@@ -10,7 +10,7 @@ export function getFirstTenNumbers() {
     numsArr.push(i);
   }
 }
-getFirstTenNumbers();
+return getFirstTenNumbers();
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-1"
