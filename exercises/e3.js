@@ -29,8 +29,8 @@ export function getAverage(array) {
 
 export function getStringSum(str) {
   // Your code goes here...
+  let temp = 0; 
   for(let i =0; i <= str.length; i++) {
-    let temp = 0; 
     if(str.charAt(i) >= '0' && str.charAt(i) <= '9') {
       temp += str.charAt(i);
     }
