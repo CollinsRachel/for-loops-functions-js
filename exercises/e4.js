@@ -16,6 +16,13 @@ export function findMinValueInArray(array) {
 
 export function findMaxValueInArray(array) {
   // Your code goes here...
+  var min = array[0];
+  for(let i of array) {
+    if(i >= min) {
+      min = i;
+    }
+  }
+  return min;
 }
 
 // === TEST YOURSELF ===
