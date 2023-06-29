@@ -8,7 +8,7 @@ export function findMinValueInArray(array) {
   var min = array[0];
   for(let i of array) {
     if(i <= min) {
-      min = n;
+      min = i;
     }
   }
   return min;
