@@ -9,8 +9,9 @@ export function getFirstTenNumbers() {
   for(let i = 1; i <= 10; i++) {
     numsArr.push(i);
   }
+  return getFirstTenNumbers();
+
 }
-return getFirstTenNumbers();
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-1"
