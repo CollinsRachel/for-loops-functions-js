@@ -35,6 +35,7 @@ export function getStringSum(str) {
       temp += str.charAt(i);
     }
   }
+  return temp;
 }
 
 
