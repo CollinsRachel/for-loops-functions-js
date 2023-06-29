@@ -8,7 +8,6 @@ export function getFirstTenNumbers() {
   let numsArr = [];
   for(let i = 1; i <= 10; i++) {
     numsArr.push(i);
-    console.log(numsArr[i]); 
   }
 }
 getFirstTenNumbers();
