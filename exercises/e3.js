@@ -10,7 +10,13 @@
 
 export function getAverage(array) {
   // Your code goes here...
-
+  let total = 0;
+  let count = 0;
+  for(let i of array) {
+    total += i;
+    count++;
+  }
+  return total / count; 
 }
 
 
@@ -23,7 +29,12 @@ export function getAverage(array) {
 
 export function getStringSum(str) {
   // Your code goes here...
-
+  for(let i =0; i <= str.length; i++) {
+    let temp = 0; 
+    if(isNumeric(str.charAt(i))) {
+      temp += str.charAt(i);
+    }
+  }
 }
 
 
