@@ -5,6 +5,13 @@
 
 export function findMinValueInArray(array) {
   // Your code goes here...
+  var min = array[0];
+  for(let i of array) {
+    if(i <= min) {
+      min = n;
+    }
+  }
+  return min;
 }
 
 export function findMaxValueInArray(array) {
