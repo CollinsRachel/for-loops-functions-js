@@ -31,7 +31,7 @@ export function getStringSum(str) {
   // Your code goes here...
   for(let i =0; i <= str.length; i++) {
     let temp = 0; 
-    if(isNumeric(str.charAt(i))) {
+    if(str.charAt(i) >= '0' && str.charAt(i) <= '9') {
       temp += str.charAt(i);
     }
   }
