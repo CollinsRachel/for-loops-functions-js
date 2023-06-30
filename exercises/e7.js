@@ -6,7 +6,15 @@
 
 export function getClientWithLeastPositiveBalance(array) {
   // Your code goes here...
-  
+  let lbAccounts = [];
+  let lPosBalance = array[0].balance;
+  for (let account of array) {
+    if(account.balance != 0 && account.balance < lPosBalance) {
+      lPosBalance = account.balance;
+      lbAccounts = [account];
+    }
+  }
+  return lbAccounts;
 }
 
 // === TEST YOURSELF ===
