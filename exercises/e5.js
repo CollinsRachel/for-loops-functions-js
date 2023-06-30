@@ -8,7 +8,7 @@ export function getAllClientNames(array) {
   // Your code goes here...
   const names = [];
   for (let account of array) {
-    let name = account.name;
+    var name = account.name;
     names.push(name)
   }
   return names;
