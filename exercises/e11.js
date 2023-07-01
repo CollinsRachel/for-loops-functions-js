@@ -15,10 +15,6 @@ export function getAllWithdrawals(array) {
         sum += account.withdrawals[i];
         wdSums.push(sum);
       }
-      else {
-        sum = 0;
-        wsSums.push(sum);
-      }
     }
   }
   return wdSums;
