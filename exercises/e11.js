@@ -13,8 +13,8 @@ export function getAllWithdrawals(array) {
     if (account.withdrawals) {
       for (let i of account.withdrawals) {
         sum += account.withdrawals;
-        wdSums.push(sum);
       }
+      wdSums.push(sum);
     }
     else {
       wdSums.push(0);
