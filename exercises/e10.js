@@ -11,7 +11,7 @@ export function getClientsWithLetterInName(array, letter) {
     let letterOfName = [];
     let checkLetter = false;
     for (let n in array[i].name) {
-      letterOfName.push(array[i].name[x].toLowerCase());
+      letterOfName.push(array[i].name[n].toLowerCase());
     }
     for(let x = 0; x < letterOfName.length; x++) {
       if(letterOfName[x] === letter.toLowerCase()) {
