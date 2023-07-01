@@ -9,8 +9,8 @@ export function getAllWithdrawals(array) {
   const wdSums = [];
 
   for (let account of array) {
-    if (account.withdrawals.length > 0) {
-      for (let i = 0; i <= account.withdrawals.length; i++) {
+    if (account.withdrawals) {
+      for (let i of account.withdrawals.length) {
         let sum = 0;
         sum += account.withdrawals[i];
         wdSums.push(sum);
