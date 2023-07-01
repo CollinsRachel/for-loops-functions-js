@@ -12,7 +12,7 @@ export function getAllWithdrawals(array) {
     let sum = 0;
     if (account.withdrawals) {
       for (let i of account.withdrawals) {
-        sum += account.withdrawals;
+        sum += i;
       }
       wdSums.push(sum);
     }
