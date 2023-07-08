@@ -6,16 +6,17 @@
 
 export function getAllDepositsGreaterThanOneHundred(array) {
   // Your code goes here...
-  const grtrThan = [];
+  const greaterThan = [];
+  const MIN_BAL = 100; 
 
   for (let account of array) {
-    for(let amount of account.deposits) {
-      if (amount > 100) {
-        grtrThan.push(account.deposit)
-    }
+    for(let amount of account.deposits || []) {
+      if (amount > MIN_BAL) {
+        greaterThan.push(amount);
+      }
     }
   }
-  return grtrThan;
+  return greaterThan;
 }
 
 
