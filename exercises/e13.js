@@ -17,7 +17,7 @@ export function getAllAccountsWithSumsOfDepositsLess2000(array) {
         }
       }
       if(sum < 2000){
-        lsThan.push(sum);
+        lsThan.push(account);
       }
     }
   return lsThan; 
