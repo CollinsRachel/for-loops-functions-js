@@ -5,9 +5,15 @@
 // Array example: bankAccounts in /data/data.js
 // getClientsWithWrongBalance(bankAccounts) => [{ name: 'Name1', balance: 32, ... }, { name: 'Name2', balance: 3523, ... }]
 
+import { getAllWithdrawals } from "./e11";
+
 export function getClientsWithWrongBalance(array) {
   // Your code goes here...
-
+  const wrongBalances = [];
+  let balance = 0;
+  for (let account of array) {
+    balance += getAllWithdrawals(account)
+  }
 }
 
 
