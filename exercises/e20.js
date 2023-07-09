@@ -11,15 +11,20 @@ export function separateNamesWithAFromRest(array) {
   const arr2 = [];
 
   for(let element of array) {
+    let contains = false;
     for(let charater of element) {
       if(charater === 'a') {
-        arr1.push(element);
-      }else {
-        arr2.push(element);
+        contains = true;
       }
     }
-    return [arr1, arr2];
+    if (contains) {
+      arr1.push(element);
+    } else {
+      arr2.push(element);
+    }
   }
+  return [arr1, arr2];
+
 }
 
 
