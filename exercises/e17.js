@@ -7,12 +7,16 @@
 
 export function doesArrayInclude(array, value) {
   // Your code goes here...
-  const doesInclude = new Boolean(false);
+  let doesInclude = false;
+
   for (let j = 0; j < array.length; j++) {
     if (array[j] === value) {
       doesInclude = true;
+    } else {
+      doesInclude = false;
     }
   }
+  return doesInclude;
 }
 
 
