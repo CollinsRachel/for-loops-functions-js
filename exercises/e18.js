@@ -8,11 +8,11 @@ export function joinToString(array, separator) {
     //string that will be returned
     let joined = ""; 
     //iterate through each element of the array
-    for (let element of array){
+    for (let element = 0; element < array.length; element++){
     //add each element of array to the string 
         joined += array[element];
     //while iterating through the array, add the seperator after element is added to string
-        if(element <= array.length) {
+        if(element < array.length-1) {
             joined += separator;
         }
     }
