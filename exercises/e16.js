@@ -7,7 +7,22 @@
 
 export function flatArrays(array) {
   // Your code goes here...
-
+  //empty array to hold copy of arrays
+  const flattened = [];
+  //iterate through each element of the array
+  for(let elements of array) {
+  //check if the current element is an array or not
+  if(!array.isArray(elements)){
+    //if the element is not an array push the element to the array
+    flattened.push(elements);
+  } else {
+    //if the elements is an array iterate through array and push elements to empty array
+      for(let element of elements) {
+        flattened.push(element);
+      }
+    }
+  }
+  return flattened; 
 }
 
 
