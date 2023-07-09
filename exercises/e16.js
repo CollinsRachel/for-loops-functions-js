@@ -12,7 +12,7 @@ export function flatArrays(array) {
   //iterate through each element of the array
   for(let elements of array) {
   //check if the current element is an array or not
-  if(!array.isArray(elements)){
+  if(!Array.isArray(elements)){
     //if the element is not an array push the element to the array
     flattened.push(elements);
   } else {
