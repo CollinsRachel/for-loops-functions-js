@@ -6,7 +6,15 @@
 
 export function reverseArray(array) {
   // Your code goes here...
-
+  //resulting array
+  const reversed = [];
+  //iterate through the array starting at the last element of the array
+  //instead of incrementing through array decrement because we are starting at the end
+  // keep decrementing until it gets to array[0]
+  for(let j = array.length; i >= 0; i--) {
+    reversed.push(array[i]);
+  }
+  return reversed; 
 }
 
 
